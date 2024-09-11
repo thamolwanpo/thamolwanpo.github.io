@@ -1,5 +1,7 @@
 title: Thamolwan Poopradubsil
-description: Thamolwan's personal website
+description: Just a girl who wants to change the world with coding
+logo: /assets/img/avatar.png
+show_downloads: true
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one

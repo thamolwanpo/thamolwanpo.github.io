@@ -1,1 +1,0 @@
-# thamolwanpo.github.io
