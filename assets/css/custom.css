@@ -1,0 +1,10 @@
+h1 a {
+    text-decoration: none; /* Removes underline */
+    color: #000000; /* Set your default color, black in this case */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+h1 a:hover {
+    color: #f39c12; /* Change color to orange when hovering */
+    text-decoration: none; /* Ensure no underline on hover */
+}

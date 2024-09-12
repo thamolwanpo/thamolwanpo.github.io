@@ -18,6 +18,7 @@ common-ext-css:
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/bootstrap-social.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
     {% if layout.common-ext-css %}
       {% for css in layout.common-ext-css %}
         {% include ext-css.html css=css %}
