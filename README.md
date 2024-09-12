@@ -1,0 +1,2 @@
+# Research Interests
+My research focuses on applying machine learning to assess the social, environmental, and public opinion impacts of public policies. I am also interested in enhancing large language models (LLMs) through knowledge graph construction and developing Responsible AI frameworks to ensure fairness and transparency in decision-making.
