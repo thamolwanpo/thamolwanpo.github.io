@@ -1,31 +1,18 @@
+.text-center {
+    text-align: center; /* Centers content horizontally */
+}
+
 .list-inline {
-    list-style-type: none; /* Removes bullet points */
+    list-style: none; /* Removes bullet points */
     padding-left: 0; /* Removes default padding */
     margin: 0; /* Removes default margin */
 }
 
 .list-inline li {
-    display: inline-block; /* Aligns the items inline */
-    margin: 15px 0; /* Adds vertical spacing between items */
+    display: inline-block; /* Displays list items inline */
+    margin-right: 15px; /* Adjust spacing between items */
 }
 
-.footer-links li a {
-    display: inline-block;
-    text-decoration: none; /* Removes underline */
-    color: #ffffff; /* Change to your preferred color */
-    background-color: #3b5998; /* Example background color */
-    width: 50px; /* Adjust the size */
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50%; /* Makes the link a circle */
-    text-align: center;
-    font-size: 24px;
-}
-
-.footer-links li a:hover {
-    background-color: #f39c12; /* Hover effect */
-}
-
-.text-center {
-    text-align: center; /* Centers the list in its container */
+.list-inline li:last-child {
+    margin-right: 0; /* Removes margin from the last item */
 }
