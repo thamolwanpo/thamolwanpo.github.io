@@ -1,6 +1,7 @@
 ---
 common-css:
   - "/assets/css/bootstrap-social.css"
+  - "/assets/css/custom.css"
 common-ext-css:
   - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 ---
@@ -14,7 +15,13 @@ common-ext-css:
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/bootstrap-social.css" | relative_url }}">
+    
+    {% if layout.common-css %}
+      {% for css in layout.common-css %}
+        <link rel="stylesheet" href="{{ css | relative_url }}">
+      {% endfor %}
+    {% endif %}
+
     {% if layout.common-ext-css %}
       {% for css in layout.common-ext-css %}
         {% include ext-css.html css=css %}
