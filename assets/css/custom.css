@@ -1,10 +1,10 @@
 
 body {
-    font-family: "Rubik", sans-serif;
+    font-family: "Rubik", sans-serif !important;
 }
 
 h1 a {
-    font-family: "Pacifico", sans-serif;
+    font-family: "Pacifico", sans-serif !important;
     text-decoration: none; /* Removes underline */
     color: #000000; /* Set your default color, black in this case */
     transition: color 0.3s ease; /* Smooth color transition on hover */
