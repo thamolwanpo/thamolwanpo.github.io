@@ -1,17 +1,11 @@
 title: Thamolwan Poopradubsil
 description: Dream big, like reaching for the moon. Even if you don't make it, you'll still find yourself surrounded by the stars.
 logo: /assets/img/avatar.png
-round-avatar: true
 
 social-network-links:
   email: "tmw.poopradubsil@gmail.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: thamolwanpo
   linkedin: thamolwan-poopradubsil
-
-share-links-active:
-  twitter: true
-  linkedin: true
 
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
