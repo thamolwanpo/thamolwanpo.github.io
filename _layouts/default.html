@@ -5,6 +5,7 @@ common-ext-css:
   - href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     sri: "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
   - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  - "https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
 ---
 
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ common-ext-css:
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/bootstrap-social.css" | relative_url }}">
-
+    <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
     {% if layout.common-ext-css %}
       {% for css in layout.common-ext-css %}
         {% include ext-css.html css=css %}
