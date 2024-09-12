@@ -13,3 +13,10 @@ h1 a:hover {
     color: #f39c12; /* Change color to orange when hovering */
     text-decoration: none; /* Ensure no underline on hover */
 }
+
+#description {
+    font-size: 0.9em; /* Makes the font slightly smaller than normal */
+    color: rgb(50, 50, 50); /* Changes the font color to dark gray */
+    margin-top: 10px; /* Adds a 10px margin at the top */
+}
+
