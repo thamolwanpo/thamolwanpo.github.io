@@ -1,3 +1,5 @@
+@import "{{ site.theme }}";
+
 h1 a {
     text-decoration: none; /* Removes underline */
     color: #000000; /* Set your default color, black in this case */
