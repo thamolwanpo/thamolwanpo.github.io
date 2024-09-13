@@ -7,6 +7,9 @@ social-network-links:
   github: thamolwanpo
   linkedin: thamolwan-poopradubsil
 
+show_downloads: true
+cv_path: /document/Thamolwan_CV.pdf
+
 github:
   is_user_page: false
 
