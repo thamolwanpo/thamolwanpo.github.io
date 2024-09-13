@@ -23,3 +23,13 @@ h2 {
     margin-top: 10px; /* Adds a 10px margin at the top */
 }
 
+.btn-custom {
+    background-color: #f39c12;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #e08e0b;
+    color: white;
+}
+

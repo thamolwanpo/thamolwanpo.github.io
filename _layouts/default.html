@@ -47,17 +47,20 @@ common-ext-css:
 
         <iframe style="margin-top: 10px; border-radius:12px;" src="https://open.spotify.com/embed/track/72LK2LMshEsiXjLw8CDIU4?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
+        {% if site.show_downloads %}
+        <div class="container text-center mt-5">
+          <a href="{{ site.cv_path }}" class="btn btn-custom btn-lg" download>
+            <i class="fas fa-file-download"></i> Download CV
+          </a>
+        </div>
+        {% endif %}
+        
         <p class="view">{% include social-networks-links.html %}</p>
 
         {% if site.github.is_user_page %}
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         {% endif %}
 
-        {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ site.cv_path }}">Download <strong>CV</strong></a></li>
-        </ul>
-        {% endif %}
       </header>
       <section>
 
