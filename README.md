@@ -7,3 +7,5 @@ Previously, Thamolwan worked as a Machine Learning Engineer at Appman Co., Ltd.,
 - Applying machine learning to assess the social, environmental, and public opinion impacts of public policies.
 - Enhancing large language models (LLMs) through knowledge graph construction.
 - Developing Responsible AI frameworks to ensure fairness and transparency in decision-making.
+
+## Selected Research Papers
