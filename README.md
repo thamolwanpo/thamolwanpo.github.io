@@ -21,12 +21,12 @@ Under Revision
 **Question-Answer Pairing from IM
 Conversations via Message Merging and Reply-to Prediction**  
 *Thamolwan Poopradubsil, Chia-Hui Chang*  
-PACLIC 2022  
+**Oral Paper** at PACLIC 2022  
 [(paper)](https://aclanthology.org/2022.paclic-1.2.pdf)
 
 **Chat-log Disentanglement via Same-Thread Classification and Direct-Reply Prediction**  
 *Chia-Hui Chang, ZhiXian Liu, Thamolwan Poopradubsil, Yu-Ching Liao, Yu-Hao Wu*  
-PACLIC 2022  
+**Oral Paper** at PACLIC 2022  
 [(paper)](https://aclanthology.org/2022.paclic-1.11/)
 
 **Antibody Watch: Text mining antibody specificity from the literature**  
