@@ -3,11 +3,6 @@ Thamolwan Poopradubsil holds a Master of Science in Computer Science and Informa
 
 Previously, Thamolwan worked as a Machine Learning Engineer at Appman Co., Ltd., where she developed models for automating information extraction from image documents, Thai-English machine translation, and large language model-based chatbots. She also has teaching experience in algorithm design and analysis.
 
-## Research Interests
-- Applying machine learning to assess the social, environmental, and public opinion impacts of public policies.
-- Enhancing large language models (LLMs) through knowledge graph construction.
-- Developing Responsible AI frameworks to ensure fairness and transparency in decision-making.
-
 ## Selected Research Papers
 **ScanClimatePolicy: A Framework for Analyzing Sectoral Climate Policies and Their Environmental Impact**  
 *Thamolwan Poopradubsil, Panon Latcharote, Tipajin Thaipisutikul*  
