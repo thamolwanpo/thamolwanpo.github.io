@@ -1,8 +1,13 @@
+import Footer from './components/Footer';
+import AppRoutes from './routes/AppRoutes';
+
 function App() {
   return (
-    <div className="h-screen flex items-center justify-center">
-      <h1 className="text-3xl font-bold">Welcome to My Portfolio</h1>
-    </div>
+    <>
+      <AppRoutes />      {/* Route transitions happen here */}
+      <Footer />
+    </>
   );
 }
+
 export default App;
