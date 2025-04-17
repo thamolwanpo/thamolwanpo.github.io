@@ -16,7 +16,7 @@ export default function Badminton() {
 
     const [introSection, ...otherSections] = sections;
 
-    const imageSrc = require(`../assets/about/${introSection.image}`);
+    const imageSrc = require(`../assets/badminton/${introSection.image}`);
 
     const isMobile = window.innerWidth < 640;
 
@@ -33,7 +33,7 @@ export default function Badminton() {
                         .join("\n")}
                 />
             }
-            introRight={<ImageSide imgSrc={imageSrc} alt="about" />}
+            introRight={<ImageSide imgSrc={imageSrc} alt="badminton" />}
             after={
                 <>
                     {otherSections.map((section, idx) => {
@@ -42,7 +42,7 @@ export default function Badminton() {
                         const hasImage = section.image && !isMobile;
 
                         const imageSecSrc = hasImage
-                            ? require(`../assets/about/${section.image}`)
+                            ? require(`../assets/badminton/${section.image}`)
                             : null;
 
                         const description =

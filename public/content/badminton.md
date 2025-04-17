@@ -1,69 +1,43 @@
-## from player to coach.
+## badminton.
 
-![](about-main.png)
+![](badminton-main.png)
 
-uncovering insights from human language and digital behavior
+from national athlete to mentor of the next generation
 
-I’m a researcher exploring how language reflects human behavior in the digital world. I use natural language processing to analyze social media discourse, uncover patterns, and understand public perception across areas like politics, entertainment, and mental health.
-
----
-
-## professional background
-
-![](about-background.png)
-
-Currently a research assistant under Dr. Tipajin Thaipisutikul, Assistant Professor at Mahidol University. Previously worked at Appman as a Machine Learning Engineer, focusing on Thai-English translation, document understanding, and LLM-based chatbots. I also have experience teaching algorithm design and analysis.
+I’m a former junior national badminton player with a peak world ranking of #82 and a bronze medal from the All Thailand Championships. Now, I coach young athletes, helping them grow in both skill and mindset.
 
 ---
 
-## research interest
+## badminton journey
 
-![](about-interest.png)
+![](badminton-journey.png)
 
-My interests lie in leveraging NLP to uncover linguistic signals in digital communication. I'm especially curious about misinformation, public stance, and large-scale behavior patterns found in social platforms.
-
----
-
-## education and training
-
-![](about-education.png)
-
--   M.Sc. in Computer Science and Information Engineering, National Central University, Taiwan
--   B.Sc. (First Class Honors) in Computer Science, Kasetsart University, Thailand
+I began playing badminton at age 7 and entered the competitive circuit soon after. My journey took me to national-level tournaments and taught me discipline, resilience, and teamwork.
 
 ---
 
-## publications
+## achievements
 
-![]()
+![](badminton-achievement.png)
 
--   **ClimatePolicyGen: A Multi-Agent Framework for Climate Policy Generation Using Multivariate and Multimodal Time Series Inputs**
-    _Thamolwan Poopradubsil, Tipajin Thaipisutikul_
-    Intelligent Systems with Applications  
-    Under Submission
+-   🌍 World Ranking: #82 (Women’s Singles, April 2019)
+-   🏸 Junior National Team Player
+-   🥉 Bronze Medal, World Junior Championship 2014 (Mixed Team)
+-   🥉 Bronze Medalist, SCG All Thailand Championship 2017 (Women’s Singles)
+-   🥇 3× Women’s Singles Champion, Thailand National Games
 
--   **ScanClimatePolicy: A Framework for Analyzing Sectoral Climate Policies and Their Environmental Impact**  
-    _Thamolwan Poopradubsil, Sheng-Chih Chen, Panon Latcharote, Tipajin Thaipisutikul_  
-    Scientific Reports  
-    Under Submission
+---
 
--   **IntelliMatch: Translating Research Intentions into Precision Dataset Recommendations with Contrastive Learning and LLM Re-Ranking**  
-    _Thamolwan Poopradubsil, Tipajin Thaipisutikul_  
-    Neurocomputing  
-    Revision Submitted
+## coaching experience
 
--   **Question-Answer Pairing from IM
-    Conversations via Message Merging and Reply-to Prediction**  
-    _Thamolwan Poopradubsil, Chia-Hui Chang_  
-    **Oral Paper** at PACLIC 2022  
-    [(paper)](https://aclanthology.org/2022.paclic-1.2.pdf)
+![](badminton-coach.png)
 
--   **Chat-log Disentanglement via Same-Thread Classification and Direct-Reply Prediction**  
-    _Chia-Hui Chang, ZhiXian Liu, Thamolwan Poopradubsil, Yu-Ching Liao, Yu-Hao Wu_  
-    **Oral Paper** at PACLIC 2022  
-    [(paper)](https://aclanthology.org/2022.paclic-1.11/)
+-   Assisted in feeding drills and sparring
+-   Worked with young athletes at @First Badminton Club as an assistant coach for singles players
+-   Supported national player Busanan in training and sparring
 
--   **Antibody Watch: Text mining antibody specificity from the literature**  
-    _Chun-Nan Hsu, Chia-Hui Chang, Thamolwan Poopradubsil, Amanda Lo, Karen A. William, Ko-Wei Lin, Anita E. Bandrowski, Ibrahim Burak Özyurt, Jeffrey S. Grethe, Maryann E. Martone_  
-    PLoS Comput. Biol (2021)  
-    [(paper)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008967)
+---
+
+## coaching philosophy
+
+> I believe coaching is more than just teaching technique — it’s about building confidence, trust, and shared purpose. As a singles specialist, I understand the mental and strategic demands of the game. I value open conversation, believing that strong coach-athlete bonds come from mutual understanding and working toward the same goals.

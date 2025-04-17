@@ -1,5 +1,5 @@
 // src/components/TextIntroSide.jsx
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -39,11 +39,31 @@ export default function TextIntroSide({
             )}
 
             {description && (
-                <p
-                    className={`lowercase text-gray-500 max-w-xl mb-4 ${paragraphSize}`}
+                <div
+                    className={`lowercase text-gray-500 mb-4 ${paragraphSize}`}
                 >
-                    {description}
-                </p>
+                    <ReactMarkdown
+                        remarkPlugins={[remarkGfm]}
+                        components={{
+                            p: ({ children }) => (
+                                <p className="mb-2 leading-relaxed">
+                                    {children}
+                                </p>
+                            ),
+                            blockquote: ({ children }) => (
+                                <blockquote className="relative pl-10 pr-4 py-4 border-l-4 border-indigo-500 text-gray-700 italic my-6">
+                                    <FontAwesomeIcon
+                                        icon={faQuoteLeft}
+                                        className="absolute left-2 top-4 text-indigo-500"
+                                    />
+                                    {children}
+                                </blockquote>
+                            ),
+                        }}
+                    >
+                        {description}
+                    </ReactMarkdown>
+                </div>
             )}
 
             {Array.isArray(list) && (
@@ -57,7 +77,7 @@ export default function TextIntroSide({
                                 icon={faArrowRight}
                                 className="mt-1 text-indigo-500 w-3"
                             />
-                            <span className="max-w-xl">
+                            <span>
                                 <ReactMarkdown
                                     remarkPlugins={[remarkGfm]} // ✅ use GFM plugin
                                     components={{
