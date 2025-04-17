@@ -1,6 +1,7 @@
 // src/components/SplitIntroSide.jsx
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function SplitIntroSide({
     direction = "left",
@@ -124,8 +125,8 @@ export default function SplitIntroSide({
                 }`}
             />
 
-            <a
-                href={linkTo}
+            <Link
+                to={linkTo}
                 className="absolute inset-0 z-40"
                 aria-label={
                     direction === "left" ? "Go to About" : "Go to Badminton"
@@ -134,7 +135,7 @@ export default function SplitIntroSide({
                 <span className="sr-only">
                     {direction === "left" ? "Go to About" : "Go to Badminton"}
                 </span>
-            </a>
+            </Link>
 
             {/* Text */}
             {showText && (

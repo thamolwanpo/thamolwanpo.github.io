@@ -29,7 +29,7 @@ export default function Landing() {
     }, []);
 
     useEffect(() => {
-        const delay = setTimeout(() => setHoverEnabled(true), 4000);
+        const delay = setTimeout(() => setHoverEnabled(true), 3000);
         return () => clearTimeout(delay);
     }, []);
 
