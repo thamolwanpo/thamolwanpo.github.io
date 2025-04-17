@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.063c6d84.css",
-    "main.js": "/static/js/main.eccbcd6e.js",
+    "main.js": "/static/js/main.74bedbb3.js",
     "static/media/badminton-main.png": "/static/media/badminton-main.35c9fd4f808980ef76d5.png",
     "static/media/badminton-journey.png": "/static/media/badminton-journey.9c48873757bd491a07e1.png",
     "static/media/badminton-achievement.png": "/static/media/badminton-achievement.8cf8241867163b0fa3c8.png",
@@ -19,10 +19,10 @@
     "static/media/logo.png": "/static/media/logo.35a893af747ad16ee1f2.png",
     "index.html": "/index.html",
     "main.063c6d84.css.map": "/static/css/main.063c6d84.css.map",
-    "main.eccbcd6e.js.map": "/static/js/main.eccbcd6e.js.map"
+    "main.74bedbb3.js.map": "/static/js/main.74bedbb3.js.map"
   },
   "entrypoints": [
     "static/css/main.063c6d84.css",
-    "static/js/main.eccbcd6e.js"
+    "static/js/main.74bedbb3.js"
   ]
 }
