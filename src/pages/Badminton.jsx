@@ -6,6 +6,18 @@ import ImageSide from "../components/ImageSide";
 import ScrollRevealSection from "../sections/ScrollRevealSection";
 import { parseSectionsMarkdown } from "../utils/parseSectionsMarkdown";
 
+import mainImg from "../assets/badminton/badminton-main.png";
+import coachingImg from "../assets/badminton/badminton-coach.png";
+import achievementsImg from "../assets/badminton/badminton-achievement.png";
+import journeyImg from "../assets/badminton/badminton-journey.png";
+
+const imageMap = {
+    "badminton-main.png": mainImg,
+    "badminton-coach.png": coachingImg,
+    "badminton-achievement.png": achievementsImg,
+    "badminton-journey.png": journeyImg,
+};
+
 export default function Badminton() {
     const [sections, setSections] = useState([]);
 
@@ -17,7 +29,7 @@ export default function Badminton() {
 
     const [introSection, ...otherSections] = sections;
 
-    const imageSrc = require(`../assets/badminton/${introSection.image}`);
+    const imageSrc = imageMap[introSection.image];
 
     const isMobile = window.innerWidth < 640;
 
@@ -43,7 +55,7 @@ export default function Badminton() {
                         const hasImage = section.image && !isMobile;
 
                         const imageSecSrc = hasImage
-                            ? require(`../assets/badminton/${section.image}`)
+                            ? imageMap[section.image]
                             : null;
 
                         const description =

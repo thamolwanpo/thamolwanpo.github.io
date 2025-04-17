@@ -6,6 +6,18 @@ import ImageSide from "../components/ImageSide";
 import ScrollRevealSection from "../sections/ScrollRevealSection";
 import { parseSectionsMarkdown } from "../utils/parseSectionsMarkdown";
 
+import mainImg from "../assets/about/about-main.png";
+import educationImg from "../assets/about/about-education.png";
+import interestImg from "../assets/about/about-interest.png";
+import backgroundImg from "../assets/about/about-background.png";
+
+const imageMap = {
+    "about-main.png": mainImg,
+    "about-education.png": educationImg,
+    "about-interest.png": interestImg,
+    "about-background.png": backgroundImg,
+};
+
 export default function Research() {
     const [sections, setSections] = useState([]);
 
@@ -17,7 +29,7 @@ export default function Research() {
 
     const [introSection, ...otherSections] = sections;
 
-    const imageSrc = require(`../assets/about/${introSection.image}`);
+    const imageSrc = imageMap[introSection.image];
 
     const isMobile = window.innerWidth < 640;
 
@@ -43,7 +55,7 @@ export default function Research() {
                         const hasImage = section.image && !isMobile;
 
                         const imageSecSrc = hasImage
-                            ? require(`../assets/about/${section.image}`)
+                            ? imageMap[section.image]
                             : null;
 
                         const description =
