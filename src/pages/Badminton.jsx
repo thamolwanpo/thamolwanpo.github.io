@@ -1,3 +1,4 @@
+// src/pages/Badminton.jsx
 import { useEffect, useState } from "react";
 import PageLayout from "../layouts/PageLayout";
 import TextIntroSide from "../components/TextIntroSide";

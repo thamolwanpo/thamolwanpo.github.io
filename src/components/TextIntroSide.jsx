@@ -38,7 +38,7 @@ export default function TextIntroSide({
                 </p>
             )}
 
-            {description && (
+            {description && typeof description === "string" ? (
                 <div
                     className={`lowercase text-gray-500 mb-4 ${paragraphSize}`}
                 >
@@ -63,6 +63,12 @@ export default function TextIntroSide({
                     >
                         {description}
                     </ReactMarkdown>
+                </div>
+            ) : (
+                <div
+                    className={`lowercase text-gray-500 mb-4 ${paragraphSize}`}
+                >
+                    {description} {/* this is JSX, like social icons */}
                 </div>
             )}
 
