@@ -1,13 +1,11 @@
-import Footer from './components/Footer';
-import AppRoutes from './routes/AppRoutes';
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  return (
-    <>
-      <AppRoutes />      {/* Route transitions happen here */}
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <AppRoutes /> {/* Route transitions happen here */}
+        </>
+    );
 }
 
 export default App;

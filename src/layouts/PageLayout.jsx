@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
+import Footer from "../components/Footer";
 
 export default function PageLayout({
     introLeft,
@@ -10,6 +11,7 @@ export default function PageLayout({
     after,
     onMouseMove,
     onMouseLeave,
+    isLanding = false,
 }) {
     const [showChildren, setShowChildren] = useState(false);
     const leftControls = useAnimation();
@@ -52,19 +54,23 @@ export default function PageLayout({
             </motion.div>
 
             {/* 🔵 PAGE CONTENT */}
-            <div className="py-8">
+            <div className={`py-8 ${isLanding ? "" : "container mx-auto"}`}>
                 <div>
                     {/* Intro section */}
                     {introLeft && introRight && (
                         <section
                             onMouseMove={onMouseMove}
                             onMouseLeave={onMouseLeave}
-                            className="hidden sm:flex relative w-full min-h-[80svh] overflow-hidden"
+                            className={`relative w-full min-h-[80svh] overflow-hidden flex ${
+                                isLanding
+                                    ? "hidden sm:flex"
+                                    : "flex flex-col sm:flex-row"
+                            }`}
                         >
                             <motion.div
                                 initial={{ x: -300 }}
                                 animate={leftControls}
-                                className="w-full w-1/2 text-center"
+                                className="w-full sm:w-1/2 text-center"
                             >
                                 {introLeft}
                             </motion.div>
@@ -72,7 +78,7 @@ export default function PageLayout({
                             <motion.div
                                 initial={{ x: 300 }}
                                 animate={rightControls}
-                                className="w-full w-1/2 text-center"
+                                className="w-full sm:w-1/2 text-center"
                             >
                                 {introRight}
                             </motion.div>
@@ -97,6 +103,7 @@ export default function PageLayout({
                     )}
                 </div>
             </div>
+            <Footer />
         </motion.div>
     );
 }

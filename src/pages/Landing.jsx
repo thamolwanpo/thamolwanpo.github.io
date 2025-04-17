@@ -1,65 +1,64 @@
 // src/pages/Landing.jsx
 import { useEffect, useRef, useState } from "react";
-
 import PageLayout from "../layouts/PageLayout";
 import ScrollRevealSection from "../sections/ScrollRevealSection";
 import SplitIntroSide from "../components/SplitIntroSide";
+import StackedIntroSide from "../components/StackedIntroSide";
+import HeroIntro from "../components/HeroIntro";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 
 import fgLeft from "../assets/landing/fg-left.png";
 import bgLeft from "../assets/landing/bg-left.png";
 import fgRight from "../assets/landing/fg-right.png";
 import bgRight from "../assets/landing/bg-right.png";
+import mobileImg from "../assets/landing/mobile-landing.png";
 
-import moblieImg from "../assets/landing/mobile-landing.png";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
-import StackedIntroSide from "../components/StackedIntroSide";
-import HeroIntro from "../components/HeroIntro";
+import { parseLandingMarkdown } from "../utils/parseLandingMarkdown";
 
 export default function Landing() {
     const [hoverRatio, setHoverRatio] = useState(0.5);
     const [hoverEnabled, setHoverEnabled] = useState(false);
+    const [content, setContent] = useState(null);
     const targetRatio = useRef(0.5);
 
+    const isMobile = window.innerWidth < 640;
+
+    useEffect(() => {
+        parseLandingMarkdown("/content/landing.md").then(setContent);
+    }, []);
+
+    useEffect(() => {
+        const delay = setTimeout(() => setHoverEnabled(true), 4000);
+        return () => clearTimeout(delay);
+    }, []);
+
+    useEffect(() => {
+        let frameId;
+        const animate = () => {
+            setHoverRatio((prev) => {
+                if (!hoverEnabled) return prev;
+                return prev + (targetRatio.current - prev) * 0.01;
+            });
+            frameId = requestAnimationFrame(animate);
+        };
+        animate();
+        return () => cancelAnimationFrame(frameId);
+    }, [hoverEnabled]);
+
     const handleMouseMove = (e) => {
-        const x = e.clientX / window.innerWidth;
-        targetRatio.current = x;
+        targetRatio.current = e.clientX / window.innerWidth;
     };
 
     const handleMouseLeave = () => {
         targetRatio.current = 0.5;
     };
 
-    const isMobile = window.innerWidth < 640;
-
-    useEffect(() => {
-        const delay = setTimeout(() => {
-            setHoverEnabled(true);
-        }, 4000); // 4.0 seconds delay
-
-        return () => clearTimeout(delay);
-    }, []);
-
-    useEffect(() => {
-        let frameId;
-
-        const animate = () => {
-            setHoverRatio((prev) => {
-                if (!hoverEnabled) return prev;
-                const next = prev + (targetRatio.current - prev) * 0.01;
-                return next;
-            });
-            frameId = requestAnimationFrame(animate);
-        };
-
-        animate();
-
-        return () => cancelAnimationFrame(frameId);
-    }, [hoverEnabled]);
+    if (!content) return null;
 
     return (
         <PageLayout
+            isLanding={true}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
             {...(isMobile
@@ -69,11 +68,11 @@ export default function Landing() {
                       children: (
                           <>
                               <StackedIntroSide
-                                  imageSrc={moblieImg}
+                                  imageSrc={mobileImg}
                                   leftLink="/about"
                                   rightLink="/badminton"
-                                  leftTitle="<ai research>"
-                                  rightTitle="badminton coach"
+                                  leftTitle={content.left.title}
+                                  rightTitle={content.right.title}
                               />
                               <HeroIntro />
                           </>
@@ -85,8 +84,8 @@ export default function Landing() {
                               direction="left"
                               fgSrc={fgLeft}
                               bgSrc={bgLeft}
-                              title="<ai researcher>"
-                              subtitle="exploring nlp and ai to understand the world — and improve it."
+                              title={content.left.title}
+                              subtitle={content.left.subtitle}
                               hoverRatio={hoverRatio}
                               linkTo="/about"
                           />
@@ -96,8 +95,8 @@ export default function Landing() {
                               direction="right"
                               fgSrc={fgRight}
                               bgSrc={bgRight}
-                              title="badminton coach"
-                              subtitle="former world #82, junior national player, and all thailand bronze medalist with a year of experience coaching young athletes."
+                              title={content.right.title}
+                              subtitle={content.right.subtitle}
                               hoverRatio={hoverRatio}
                               linkTo="/badminton"
                           />
@@ -112,18 +111,18 @@ export default function Landing() {
                                 icon={faNewspaper}
                                 className="text-indigo-600 w-6 h-6"
                             />
-                            news update
+                            latest news
                         </h3>
 
                         <div className="h-[2px] w-16 bg-indigo-600 mt-3 mx-auto rounded-full" />
 
                         <p className="mt-4 text-base sm:text-md text-gray-600">
-                            no news update at the moment. please check back
-                            later.
+                            {content.news ||
+                                "no news update at the moment. please check back later."}
                         </p>
                     </div>
                 </ScrollRevealSection>
             }
-        ></PageLayout>
+        />
     );
 }
