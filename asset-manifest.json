@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.ae010a81.css",
-    "main.js": "/static/js/main.01f4ff7f.js",
+    "main.css": "/static/css/main.fec57588.css",
+    "main.js": "/static/js/main.7115146d.js",
+    "static/media/badminton-main.png": "/static/media/badminton-main.35c9fd4f808980ef76d5.png",
+    "static/media/badminton-journey.png": "/static/media/badminton-journey.9c48873757bd491a07e1.png",
+    "static/media/badminton-achievement.png": "/static/media/badminton-achievement.8cf8241867163b0fa3c8.png",
     "static/media/about-interest.png": "/static/media/about-interest.407a6b1b57dbbe74bae8.png",
     "static/media/about-background.png": "/static/media/about-background.d9c84315ec4db50556ff.png",
-    "static/media/about-main.png": "/static/media/about-main.03192ad4d0a302259462.png",
+    "static/media/about-main.png": "/static/media/about-main.d042f83d1fc7911be796.png",
     "static/media/mobile-landing.png": "/static/media/mobile-landing.bca00f93b558bd6b1259.png",
     "static/media/fg-right.png": "/static/media/fg-right.116e9425b0eae040d0d8.png",
     "static/media/about-education.png": "/static/media/about-education.e718ddcacb7e23d20d03.png",
+    "static/media/badminton-coach.png": "/static/media/badminton-coach.d2890d90ecf940710647.png",
     "static/media/bg-right.png": "/static/media/bg-right.2abd7295578f603bbc0d.png",
     "static/media/bg-left.png": "/static/media/bg-left.b537348cc6a1b23394e6.png",
     "static/media/fg-left.png": "/static/media/fg-left.e51600337b8fc02a6ccd.png",
     "static/media/logo.png": "/static/media/logo.35a893af747ad16ee1f2.png",
     "index.html": "/index.html",
-    "main.ae010a81.css.map": "/static/css/main.ae010a81.css.map",
-    "main.01f4ff7f.js.map": "/static/js/main.01f4ff7f.js.map"
+    "main.fec57588.css.map": "/static/css/main.fec57588.css.map",
+    "main.7115146d.js.map": "/static/js/main.7115146d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae010a81.css",
-    "static/js/main.01f4ff7f.js"
+    "static/css/main.fec57588.css",
+    "static/js/main.7115146d.js"
   ]
 }

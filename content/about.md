@@ -37,7 +37,7 @@ My interests lie in leveraging NLP to uncover linguistic signals in digital comm
 
 ![]()
 
--   **ClimatePolicyGen: A Multi-Agent Framework for Climate Policy Generation Using Multivariate and Multimodal Time Series Inputs**
+-   **ClimatePolicyGen: A Multi-Agent Framework for Climate Policy Generation Using Multivariate and Multimodal Time Series Inputs**  
     _Thamolwan Poopradubsil, Tipajin Thaipisutikul_
     Intelligent Systems with Applications  
     Under Submission
