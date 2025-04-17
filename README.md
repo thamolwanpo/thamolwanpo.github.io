@@ -1,3 +1,10 @@
+# ⚠️ Legacy Branch Notice
+
+This branch contains the original Jekyll version of the site.  
+It is no longer actively maintained. Please refer to the `main` branch for the current version.
+
+---
+
 ## Bio
 Thamolwan Poopradubsil holds a Master of Science in Computer Science and Information Engineering from National Central University, Taiwan, and a Bachelor of Science with First Class Honors in Computer Science from Kasetsart University, Thailand. She is currently an independent researcher, advised by Dr. Tipajin Thaipisutikul, Assistant Professor at Mahidol University. Her research focuses on analyzing climate policies, developing dataset recommendation systems, and building a knowledge graph for policy data. Her expertise includes natural language processing (NLP), with a focus on message prediction models and biomedical text mining using techniques such as BERT and SciBERT.
 
